@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Javascript with HTML Buttons</title>
+    <title>Change HTML Using Variables</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -40,7 +40,7 @@
         <p>Facebook IS <span
         class="great"></span></p>
     </div>
-    <div class="yellowbox">
+    <div class="yellowbox" id="apple">
         <p>Apple.</p>
     </div>
     <div class="greenbox">
@@ -49,17 +49,10 @@
     <button id="button1">Change Facebook style</button>
     <button id="button2">Change apple style</button>
     <script>
-        document.getElementById("button1").onClick = 
-        function() {
-            document.getElementById("facebook").style.width =
-            '200px';
-                  }
-
-        document.getElementById("button2").onDblClick = 
-        function() {
-            document.getElementById("apple").innerHTML =
-            "<ul><li>Audi</li><li>Mercedes></li><li>BMW></li></ul>";
-        }          
+        function greeting1(){
+            window.alert("Hello!");
+            console.log(greeting1);
+        }
     </script>
 </body>
 
