@@ -17,7 +17,20 @@
             this.model = model;
             this.wararnty = warranty;
             this.color = color;
+            this.extendWarranty = function(x){
+                this.warranty = this.warranty + x;
+                //adding x to original warranty
+                //or this is easier:
+                //this.warranty += x
+            };
         };
+
+        var myPhone = new phone ("Apple", "XS Max", 12, "Red");
+        window.console.log(myPhone);
+        
+        myPhone.extendedWarranty(12);
+        window.console.log(myPhone.warranty);
+
     </script>
 </body>
 
