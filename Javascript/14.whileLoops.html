@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Array </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <p id="myParagraph">Javascript!</p>
+    <button onclick="initiateGame">Start</button>
+    <p id="balance">Currnet Blance: $1000</p>
+    <script>
+var i = 0;
+while(i < 5) {
+    document.getElementById("myParagraph").innerHTML +=
+     "<br />" + i;
+     i++;
+}
+function initiateGame(){
+
+var balance = 1000;
+var itemsBought = 0;
+while(balance > 0){
+    var itemPrice = math.floor(Math.random()*100);
+    //math.floor make it a whole #, math.random is 0-1, 
+    //you can add by *100 ie
+if(itemPrice <= balance){
+    itemsBought += 1; //number will increase by 1
+    balance -= itemPrice; //balance will be reduced by item price
+    document.getElementById("balance").innerHTML
+
+        += "</p>Purchase amount: $" + itemPrice + ", New Balance: $" + balance + " </p>";}
+}
+document.getElementById("balance").innerHTML += "<p>You bought: " +
+    itemsBought + "</p>";
+}
+ </script>
+</body>
+
+</html>

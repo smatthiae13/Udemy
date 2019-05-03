@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Array </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <p>String: <span id="string"></span></p>
+    <p>Pattern: <span id="pattern"></span></p>
+    <p>results(search): <span id="search"></span></p>
+    <p>results(match): <span id="match"></span></p>
+    <p>results(test): <span id="test"></span></p>
+  
+<script>
+
+    var str = "Atlanta4567839";
+    // var pattern = /[a-z]/g;
+     var pattern = /[4-7]/g;
+
+    //var pattern = new Regex("a", "g"); //same as above
+    document.getElementById("string").innerHTML = 
+    str; 
+    document.getElementById("pattern").innerHTML = 
+    pattern;
+    document.getElementById("search").innerHTML = 
+    str.search(pattern);
+    document.getElementById("match").innerHTML = 
+    str.match(pattern);
+    document.getElementById("test").innerHTML = 
+    pattern.test(str);
+    //window.alert(str.match(pattern));
+    //window.alert(pattern.test(str));
+    //
+</script>
+</body>
+
+</html>
+
+//i = not case sensitive
+//g = global
+//[a-z] = any letter between
+// \d = looking for digits
+// \w = letter characters
+// \W = all characters not numbers or letters
+// \s = space
+// {4} = number of instances(put after\d ie)
+// \A = a as the first character
+// \n = line break
